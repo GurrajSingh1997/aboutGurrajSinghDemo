@@ -1,0 +1,130 @@
+img{
+    border-radius: 10px;
+}
+body{
+    max-width: 968px;
+    margin: 30px auto;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bangers', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(images/abstract-blue-circle-black-background-technology_1142-12714-removebg-preview.png) , url(images/RightBgImage.png), url(images/Bottom\ left.png), url(images/bottom\ right.png);
+    background-position: left top , right top, bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;   
+}
+
+
+[alt="card_image"]{
+    height: 200px;
+    width: 200px;
+}
+
+.HeroLine{
+    text-align: center;
+}
+
+.HeroLine p{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: waivy 2s infinite;
+    animation-delay: calc(.1s *var(--i));
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: 20px;
+    font-weight: bolder;
+    margin-left: 9px;
+    
+}
+
+@keyframes inOut{
+    0%{
+        transform: translateY(200px);
+    }
+}
+
+@keyframes waivy {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
+
+.Main_Cards{
+    display: flex;
+    margin-top: 20px;
+    max-width: 968px;
+}
+
+.services{
+    max-width: 968px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0px 20px 50px rgb(30, 30, 30);
+    animation: inOut 2s ; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.services:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+[alt="card_image"]{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.services h1{
+    color: #007bff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.services p{
+    margin-top: 15px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.aboutus{
+    margin-top: 30px;
+    animation: inOut 2s;
+    text-align: center;
+}
+
+.aboutus h1{
+    color: #007bff;
+    font-size: 30px;
+}
+
+.aboutus p{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.contactus{
+    margin-top: 20px;
+    animation: inOut 2s;
+    text-align: center;
+}
+
+.contactus h1{
+    color: #007bff;
+    font-size: 30px;
+}
+
+.contactus p{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
